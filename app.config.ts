@@ -1,6 +1,6 @@
 export default {
-  name: 'MOSIP Resident App',
-  slug: 'mosip-resident-app',
+  name: 'TA Resident App',
+  slug: 'ta-resident-app',
   version: '1.0.0',
   orientation: 'portrait',
   icon: './assets/icon.png',

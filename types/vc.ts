@@ -37,6 +37,11 @@ export interface DecodedCredential {
 export interface CredentialSubject {
   UIN: string;
   VID: string;
+  districtOfResidence: LocalizedField[] | string;
+  countyOfResidence: LocalizedField[] | string;
+  subcountyOfResidence: LocalizedField[] | string;
+  parishOfResidence: LocalizedField[] | string;
+  villageOfResidence: LocalizedField[] | string;
   addressLine1: LocalizedField[] | string;
   addressLine2: LocalizedField[] | string;
   addressLine3: LocalizedField[] | string;
@@ -45,8 +50,12 @@ export interface CredentialSubject {
   dateOfBirth: string;
   email: string;
   fullName: string;
+  surname: string;
+  givenNames: string;
+  otherNames: string;
   gender: LocalizedField[] | string;
   id: string;
+  mobilePhone: string;
   phone: string;
   postalCode: string;
   province: LocalizedField[] | string;

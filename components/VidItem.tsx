@@ -82,7 +82,15 @@ export const VidItem: React.FC<VcItemProps> = (props) => {
             {!verifiableCredential
               ? ''
               : getLocalizedField(
-                  verifiableCredential.credentialSubject.fullName
+                  verifiableCredential.credentialSubject.surname
+                ) +
+                ' ' +
+                getLocalizedField(
+                  verifiableCredential.credentialSubject.givenNames
+                ) +
+                ' ' +
+                getLocalizedField(
+                  verifiableCredential.credentialSubject.otherNames
                 ) +
                 ' · ' +
                 generatedOn}

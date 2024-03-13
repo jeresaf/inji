@@ -790,7 +790,7 @@ export const vcItemMachine =
               requestTime: String(new Date().toISOString()),
               request: {
                 individualId: context.id,
-                otpChannels: ['EMAIL', 'PHONE'],
+                otpChannels: ['EMAIL'],
               },
             }
           );
@@ -872,7 +872,7 @@ export const vcItemMachine =
             return request('POST', '/residentmobileapp/req/otp', {
               individualId: context.id,
               individualIdType: context.idType,
-              otpChannel: ['EMAIL', 'PHONE'],
+              otpChannel: ['EMAIL'],
               transactionID: context.transactionId,
             });
           } catch (error) {

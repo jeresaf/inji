@@ -134,7 +134,11 @@ export const VcItem: React.FC<VcItemProps> = (props) => {
   const generatedOn = useSelector(service, selectGeneratedOn);
   const fullName = !verifiableCredential
     ? ''
-    : getLocalizedField(verifiableCredential.credentialSubject.fullName);
+    : getLocalizedField(verifiableCredential.credentialSubject.surname) +
+      ' ' +
+      getLocalizedField(verifiableCredential.credentialSubject.givenNames) +
+      ' ' +
+      getLocalizedField(verifiableCredential.credentialSubject.otherNames);
 
   const tag = useSelector(service, selectTag);
 

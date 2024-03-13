@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "259470317171",
-    "project_id": "mosip-resident-app",
-    "storage_bucket": "mosip-resident-app.appspot.com"
+    "project_number": "393225438815",
+    "project_id": "mosip-residentapp",
+    "storage_bucket": "mosip-residentapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "",
+        "mobilesdk_app_id": "1:393225438815:android:2d765733dcd533299ffdea",
         "android_client_info": {
           "package_name": "io.mosip.residentapp"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyBRCK9pJzcte1dEFYl7FLfdwt_XNBBHWrE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

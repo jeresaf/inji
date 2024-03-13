@@ -66,8 +66,16 @@ export const VcDetails: React.FC<VcDetailsProps> = (props) => {
                 size="smaller"
                 color={Theme.Colors.Details}>
                 {getLocalizedField(
-                  props.vc?.verifiableCredential.credentialSubject.fullName
-                )}
+                  props.vc?.verifiableCredential.credentialSubject.surname
+                ) +
+                  ' ' +
+                  getLocalizedField(
+                    props.vc?.verifiableCredential.credentialSubject.givenNames
+                  ) +
+                  ' ' +
+                  getLocalizedField(
+                    props.vc?.verifiableCredential.credentialSubject.otherNames
+                  )}
               </Text>
             </Column>
 
@@ -186,7 +194,7 @@ export const VcDetails: React.FC<VcDetailsProps> = (props) => {
                 size="smaller"
                 color={Theme.Colors.Details}>
                 {getLocalizedField(
-                  props.vc?.verifiableCredential.credentialSubject.phone
+                  props.vc?.verifiableCredential.credentialSubject.mobilePhone
                 )}
               </Text>
             </Column>
@@ -331,12 +339,11 @@ function getFullAddress(credential: CredentialSubject) {
   }
 
   const fields = [
-    'addressLine1',
-    'addressLine2',
-    'addressLine3',
-    'city',
-    'province',
-    'region',
+    'districtOfResidence',
+    'countyOfResidence',
+    'subcountyOfResidence',
+    'parishOfResidence',
+    'villageOfResidence',
   ];
 
   return fields

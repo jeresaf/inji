@@ -300,7 +300,7 @@ export const AddVcModalMachine =
             id: 'mosip.identity.otp.internal',
             individualId: context.id,
             metadata: {},
-            otpChannel: ['PHONE', 'EMAIL'],
+            otpChannel: ['EMAIL'],
             requestTime: String(new Date().toISOString()),
             transactionID: context.transactionId,
             version: '1.0',

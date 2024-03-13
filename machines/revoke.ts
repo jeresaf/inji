@@ -235,7 +235,7 @@ export const revokeVidsMachine =
           return request('POST', '/residentmobileapp/req/otp', {
             individualId: context.VIDs[0].split(':')[2],
             individualIdType: 'VID',
-            otpChannel: ['EMAIL', 'PHONE'],
+            otpChannel: ['EMAIL'],
             transactionID: transactionId,
           });
         },
